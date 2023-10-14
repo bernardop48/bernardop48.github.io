@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Bernardo Platero Mejia</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE_MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDAD</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                
+                    <p>
+                        <p>
+
+
+                        </p>
+                    </p>
+            </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+       <div class="contenido-banner">
+            <div class="contenedor-img">
+            <img src="img/foto.png" alt="">
+            </div>
+           <h1>Bernardo Platero Mejia</h1>
+            <h2>Ingeniero en Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/bernardo.plateromejia?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/BernardoPl92363"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com/bernardo_platero?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Bernardo Platero.</span> brindo servicios de mantenimiento de computo de igual manera, se programar en lenguaje "C", "HTML", </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12-07-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            7292278274
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            bernardop48@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Pablo neruda 109#. Tenango del Valle, Estado de Mexico.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programacion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <i class="fa-solid fa-book"></i>
+                <a class="btn btn-xs btn-primary" href="trabajos/cv.pdf" download="cv.pdf">Descargar CV</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDAD -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDAD</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="skill">
+                        <span>Programacion "C"</span>
+                        <div class="barra-skill">
+                            <div class="progreso" span="send: 75%;">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso" span="width: 75%;">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 75%;">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 70%;">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 80%;">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 85%;">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 90%;">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 100%;">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de Proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso" style="width: 80%;">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en Sistemas</h4>
+                        <span class="casa">Universidad ISIMA</span>
+                        <span class="fecha">2022 - 2025</span>
+                        <p>En este tiempo de estudio fue una gran practica para poder reforzar mis conocimientos </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Recepsionista</h4>
+                        <span class="casa">Medica Dental Peten</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Organizacion de pedidos de material, compra, ayudante en general, mantenimiento en ciertas areas, agendar citas y atencion al cliente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asesor de Tarjeta</h4>
+                        <span class="casa">Tarjeta amiga</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <p>Atencion al cliente, trabajo bajo presion, logro de metas, capacitacion a personal nuevo, logros y cumpliento de reglas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Programacion en "C"</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>HTML y CSS</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Base de Datos</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Programacion en "JAVA"</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>programacion en "Visual Basic"</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cisco Packet Tracer </h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>
+            <i class="fa-solid fa-code"></i>
+            <a class="btn btn-xs btn-primary" href="trabajos/portafolio.rar" download="portafolio.rar">Descargar Portafolio</a>
+            <span class="overlay"></span>
+        </button>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Contactame"></textarea>
+                    <button>
+                        <a href="https://api.whatsapp.com/send?phone=+527292278274${telefono}&text=${mensaje_whatsapp}&nombre=${nombre}&correo=${correo}">
+                            Contactame <i class="fa-solid fa-message"></i>
+                            <span class="overlay"></span></a>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li> 
+                                <i class="fa-solid fa-location-dot"></i>
+                                C. Pablo Neruda 109, Leon Guzman, 52303 Tenango del Valle, Méx.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 7292278274 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: bernardop48@gmail.com
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
